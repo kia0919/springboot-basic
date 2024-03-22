@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 
 // Controller 레이어 : 
 // - 클라이언트와 서버간의 접점
-// - 클라이언트의 요청을 받고 해당 요청에 대한 응답을 클라이언트게 돌려주는 영역
+// - 클라이언트의 요청을 받고 해당 요청에 대한 응답을 클라이언트에게 돌려주는 영역
 // - 각 요청에 해당하는 URL 메서드를 작성하는 영역
 
 // @RestController : JSON 형태의 Response Body를 반환하는 Controller 임을 명시

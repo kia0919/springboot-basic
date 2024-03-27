@@ -1,4 +1,4 @@
-package com.umsuhyun.basic.entity;
+package com.umsuhyun.basic.Entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

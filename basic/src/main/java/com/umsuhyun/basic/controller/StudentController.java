@@ -12,17 +12,23 @@ import org.springframework.web.bind.annotation.RestController;
 import com.umsuhyun.basic.dto.request.student.PostStudentRequestDto;
 
 import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("/student")
+@RequiredArgsConstructor
 public class StudentController {
+
+
+    private final com.umsuhyun.basic.service.studentService studentService;
 
     // CREATE
     @PostMapping("/")
     public ResponseEntity<String> postStudent (  // 제너릭에는 데이터 타입이 전달되어야 함 
         @RequestBody @Valid PostStudentRequestDto requestBody
     ) {
-        return null;
+        ResponseEntity<String> response = studentService.postStudent(requestBody);
+        return response;
     }     
 
     // UPDATE

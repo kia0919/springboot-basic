@@ -25,6 +25,5 @@ public class BoardEntity {
     private Integer comment_count;
     private Integer favorite_count;
     private String write_Datetime;
-    private String writerEmail;
-    
+    private String writerEmail;    
 }
